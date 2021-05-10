@@ -1,0 +1,10 @@
+@import "abstracts/mixins";
+
+:host {
+    position: fixed;
+    z-index: 3;
+    
+    button {
+        @include hamburger;
+    }
+}

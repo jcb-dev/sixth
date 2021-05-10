@@ -1,0 +1,32 @@
+@import "layout/sidebar";
+@import "base/typography";
+
+:host {
+    height: 100vh;
+
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    z-index: 3;
+
+    .sidebar {
+        background: $sidebar-background;
+        height: $sidebar-height;
+        width: $sidebar-width;
+
+        &--mobile {
+            width: 100vw;
+        }
+
+        div {
+            height: 100%;
+            padding: 200px 0;
+
+            a {
+                color: $sidebar-link-color;
+                font-size: $sidebar-link-size;
+                font-family: $font-bold;
+            }
+        }
+    }
+}

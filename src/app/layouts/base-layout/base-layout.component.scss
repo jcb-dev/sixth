@@ -1,0 +1,23 @@
+@import "layout/header";
+@import "abstracts/mixins";
+
+:host {
+    display: flex;
+    flex-direction: column;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        position: relative;
+
+        // spreads out the router-outlet/children to the whole page
+        ::ng-deep router-outlet + * {
+            flex-grow: 1;
+        }
+    }
+
+    .overlay {
+        @include overlay;
+    }
+}

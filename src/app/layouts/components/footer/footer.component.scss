@@ -1,0 +1,12 @@
+@import "layout/footer";
+
+:host {
+    display: flex;
+
+    position: relative;
+    bottom: 0;
+
+    background: $footer-background;
+    color: $footer-color;
+    height: $footer-size;
+}
