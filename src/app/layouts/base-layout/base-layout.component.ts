@@ -12,7 +12,7 @@ import { map } from 'rxjs/operators';
   animations: [
     trigger('moveContent', [
       state('move', style({
-        padding: '0 0 0 250px',
+        padding: '0 0 0 450px',
       })),
       state('reset', style({
         padding: '0',

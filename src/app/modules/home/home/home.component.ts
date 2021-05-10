@@ -12,4 +12,9 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  test(event) {
+    let item = document.getElementById('banner' + event);
+    item.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+  }
+
 }
