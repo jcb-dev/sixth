@@ -1,0 +1,5 @@
+<fa-icon *ngFor="let icon of numberOfIcons"
+         size="xs"
+         [icon]="circleIcon"
+         [ngClass]="{'selected': selectedIcon === icon}"
+         (click)="scrollTo.emit(icon); selectedIcon = icon;"></fa-icon>

@@ -1,0 +1,67 @@
+@import "abstracts/mixins";
+
+:host div.container {
+    @include full-page-component;
+
+    display: flex;
+
+    margin: auto;
+    max-width: 1200px;
+
+    img,
+    .poem {
+        flex: 1;
+    }
+
+    img {
+        height: 500px;
+        width: 500px;
+
+        margin: auto;
+        object-fit: cover;
+    }
+
+    .poem {
+        margin: auto auto auto 25px;
+        text-align: center;
+    }
+}
+
+// :host div.container {
+//     @include full-page-component;
+
+//     display: flex;
+
+//     margin: auto;
+//     max-width: 1200px;
+
+//     .image-container,
+//     .poem {
+//         flex-grow: 1;
+//     }
+
+//     .image-container {
+//         display: flex;
+//         flex-direction: column;
+
+//         img {
+//             height: 250px;
+//             width: 250px;
+
+//             object-fit: cover;
+//         }
+
+//         .first {
+//             margin: auto auto 25px 25px;
+//         }
+
+//         .second {
+//             margin: 25px 25px auto auto;
+//         }
+//     }
+
+//     .poem {
+//         margin: auto auto auto 25px;
+//         text-align: center;
+//     }
+// }

@@ -1,10 +1,23 @@
-@import "abstracts/mixins";
+@import "layout/hamburger";
 
 :host {
     position: fixed;
     z-index: 3;
-    
+
     button {
-        @include hamburger;
+        align-items: center;
+        margin: 10px;
+
+        background: $hamburger-background;
+        border: $hamburger-border;
+        border-radius: $hamburger-border-radius;
+        box-shadow: $hamburger-box-shadow;
+
+        color: $hamburger-color;
+        cursor: $hamburger-cursor;
+        outline: $hamburger-outline;
+
+        height: $hamburger-height;
+        width: $hamburger-width;
     }
 }

@@ -1,0 +1,36 @@
+@import "abstracts/mixins";
+
+:host div {
+    @include full-page-component;
+
+    color: black;
+    display: flex;
+
+    margin: auto;
+    max-width: 1200px;
+
+    video,
+    section {
+        height: 600px;
+    }
+
+    video {
+        margin: auto;
+        width: 800px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+
+        margin: auto auto auto 25px;
+
+        .header {
+            font-size: 70px;
+        }
+
+        .description {
+            font-size: 22px;
+        }
+    }
+}
